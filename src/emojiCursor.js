@@ -1,5 +1,5 @@
 export function emojiCursor(options) {
-  const possibleEmoji = (options && options.emoji) || ["😀", "😂", "😆", "😊"];
+  const possibleEmoji = (options && options.emoji) || ["🍂", "🧡", "🍁", "🎃"];
   let hasWrapperEl = options && options.element;
   let element = hasWrapperEl || document.body;
 
@@ -189,7 +189,7 @@ export function emojiCursor(options) {
     element.removeEventListener("touchmove", onTouchMove);
     element.removeEventListener("touchstart", onTouchMove);
     window.addEventListener("resize", onWindowResize);
-  };
+  }
 
   /**
    * Particles
@@ -228,6 +228,6 @@ export function emojiCursor(options) {
   init();
 
   return {
-    destroy: destroy
-  }
+    destroy: destroy,
+  };
 }
